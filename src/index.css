@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 body {
   margin: 0;
-  font-family: "Prata", serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
-  margin: 0;
+
 }
 /* header {
   padding: 0;
@@ -59,7 +59,6 @@ main {
   height: 90px;
 }
 .nav-band {
-  display: flex;
   justify-content: center;
   align-items: baseline;
   margin-top: 1%;
@@ -81,31 +80,18 @@ main {
 }
 .Navbar-overlay {
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    360deg,
-    #000000 0%,
-    rgb(0 0 0 / 37%) 100%,
-    rgb(0 0 0 / 0%) 100%
-  );
+  background: linear-gradient(180deg, rgba(220,220,228,1) 5%, rgba(0,0,0,1) 90%);
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 5;
-  display: flex;
-  align-items: center;
 }
 
-.overlay {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
 
 .nav-men {
-  font-family: "Prata", serif;
-  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
   align-items: end;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   position: relative;
   line-height: 2.5rem;
@@ -216,8 +202,8 @@ main {
 
 .App-logo {
   pointer-events: none;
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -249,3 +235,5 @@ main {
     transform: rotate(360deg);
   }
 }
+
+

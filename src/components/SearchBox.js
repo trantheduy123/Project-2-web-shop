@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import { useNavigate } from "react-router-dom";
+import '../CSS/searchbox.css'
 
 export default function SearchBox() {
   const navigate = useNavigate();
@@ -24,11 +25,17 @@ export default function SearchBox() {
           placeholder='search products...'
           aria-label='Search Products'
           aria-describedby='button-search'
+          className="search-button"
         ></FormControl>
-        <Button variant='outline-primary' type='submit' id='button-search'>
+        <Button className="button" variant="secondary" type='submit' id='button-search'>
           <i className='fas fa-search'></i>
         </Button>
       </InputGroup>
     </Form>
+ /*    <div class="input-group">
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary">search</button>
+  </div> */
+    
   );
 }

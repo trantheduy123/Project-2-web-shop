@@ -109,6 +109,7 @@ function ProductScreen() {
             </Card.Body>
           </Card>
           <ListGroup>Price : ${item.price}</ListGroup>
+          <ListGroup>Description : {item.description}</ListGroup>
         </Col>
         <Col md={3}>
           <Card>

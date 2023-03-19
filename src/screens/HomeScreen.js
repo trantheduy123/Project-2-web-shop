@@ -6,12 +6,16 @@ import Col from "react-bootstrap/Col";
 import Product from "../components/Product";
 import SliderCarousel from "../components/SliderCarousel";
 import Imgnav from "../components/Imgnav";
+import BrandLogo from "../components/BrandLogo";
 
 //import data from '../data';
 import { Helmet } from "react-helmet-async";
 import MessageBox from "./../components/MessageBox";
 import Slider from "../components/Slider";
 import Advertisement from "../components/Advertisement";
+import About from "../components/About";
+import Delivery from "../components/Delivery";
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "FETCH_REQUEST":
@@ -50,7 +54,9 @@ function HomeScreen({ theme }) {
       <Helmet>
         <title>Men's</title>
       </Helmet>
-
+      <h1>Online Shopping</h1>
+      <Delivery />
+      <h1>Big Event</h1>
       <div>
         <Row>
           <Col>
@@ -61,7 +67,7 @@ function HomeScreen({ theme }) {
           </Col>
         </Row>
       </div>
-      <Slider />
+      
       <h1>Featured Products</h1>
       <div className='products'>
         {loading ? (
@@ -78,6 +84,9 @@ function HomeScreen({ theme }) {
           </Row>
         )}
       </div>
+      <Slider />
+      <BrandLogo />
+      <About />
     </div>
   );
 }
